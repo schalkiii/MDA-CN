@@ -50,31 +50,15 @@
                     785,
                     31,
                     42,
-                    142
+                    311
                 ],
                 "template": [
-                    "CloseButton.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        }
-    },
-    "PageClose2": {
-        "desc": "关闭页面",
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    744,
-                    270,
-                    114,
-                    114
+                    "CloseButton.png",
+                    "CloseButton2.png",
+                    "CloseButton3.png",
+                    "CloseButton4.png"
                 ],
-                "template": [
-                    "CloseButton2.png"
-                ]
+                "green_mask": true
             }
         },
         "action": {

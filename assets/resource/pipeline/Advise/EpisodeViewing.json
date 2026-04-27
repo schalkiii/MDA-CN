@@ -62,7 +62,7 @@
             "[JumpBack]AdviseStory",
             "[JumpBack]PlayEpisode",
             "[JumpBack]EpisodeViewingReward",
-            "PageClose2"
+            "PageClose"
         ]
     },
     "PlayEpisode": {
