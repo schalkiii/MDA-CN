@@ -36,11 +36,11 @@
             "type": "Click"
         },
         "next": [
-            "RecyclingShopVisible",
+            "ShopRecyclingShopEntered",
             "ShopEnterRecyclingShop"
         ]
     },
-    "RecyclingShopVisible": {
+    "ShopRecyclingShopEntered": {
         "desc": "处于废铁商店",
         "recognition": {
             "type": "OCR",

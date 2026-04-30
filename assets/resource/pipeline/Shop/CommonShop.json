@@ -33,11 +33,11 @@
             "type": "Click"
         },
         "next": [
-            "CommonShopVisible",
+            "ShopCommonShopEntered",
             "ShopEnterCommonShop"
         ]
     },
-    "CommonShopVisible": {
+    "ShopCommonShopEntered": {
         "desc": "处于普通商店",
         "recognition": {
             "type": "OCR",

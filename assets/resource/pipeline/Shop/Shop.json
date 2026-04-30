@@ -29,7 +29,7 @@
             "HallEnterShop"
         ]
     },
-    "ShopCornerVisible": {
+    "ShopMainPageEntered": {
         "desc": "处于百货商店",
         "recognition": {
             "type": "OCR",
@@ -49,7 +49,7 @@
     "ShopCornerFlow": {
         "desc": "处于百货商店",
         "next": [
-            "ShopCornerVisible",
+            "ShopMainPageEntered",
             "[JumpBack]CommonShop",
             "[JumpBack]ArenaShop",
             "[JumpBack]RecyclingShop",
