@@ -36,7 +36,7 @@
             "type": "And",
             "param": {
                 "all_of": [
-                    "TribeTowerVisible"
+                    "TribeTowerMainPageEntered"
                 ]
             }
         },
@@ -249,7 +249,7 @@
             "TowerBattle1"
         ]
     },
-    "TribeTowerVisible": {
+    "TribeTowerMainPageEntered": {
         "desc": "处于无限之塔1级页面",
         "recognition": {
             "type": "OCR",
@@ -262,23 +262,6 @@
                 ],
                 "expected": [
                     "^无限之塔$"
-                ]
-            }
-        }
-    },
-    "TribeTowerStagePageVisible": {
-        "desc": "处于无限之塔2级页面",
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    556,
-                    600,
-                    183,
-                    27
-                ],
-                "expected": [
-                    ".*TOWER.*"
                 ]
             }
         }

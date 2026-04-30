@@ -50,7 +50,7 @@
             "type": "Click"
         }
     },
-    "SimulationRoomCornerVisible": {
+    "SimulationRoomMainPageEntered": {
         "desc": "处于模拟室",
         "recognition": {
             "type": "OCR",
@@ -70,7 +70,7 @@
     "SimulationRoomCornerFlow": {
         "desc": "处于模拟室",
         "next": [
-            "SimulationRoomCornerVisible",
+            "SimulationRoomMainPageEntered",
             "[JumpBack]SimulationRoomBeginSimulation",
             "[JumpBack]SimulationRoomStartOverclock",
             "BaseEndTask"

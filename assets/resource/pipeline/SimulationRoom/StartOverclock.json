@@ -63,7 +63,7 @@
             "[JumpBack]SimulationRoomScrollOverclockOptionsUp"
         ]
     },
-    "SimulationRoomOverclockLevel25Visible": {
+    "SimulationRoomSelectOverclockLevel25": {
         "desc": "检查难度是否为25",
         "recognition": {
             "type": "OCR",
@@ -76,17 +76,6 @@
                 ],
                 "expected": [
                     "25"
-                ]
-            }
-        }
-    },
-    "SimulationRoomSelectOverclockLevel25": {
-        "desc": "检查难度是否为25",
-        "recognition": {
-            "type": "And",
-            "param": {
-                "all_of": [
-                    "SimulationRoomOverclockLevel25Visible"
                 ]
             }
         },
