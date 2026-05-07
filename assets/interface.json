@@ -4,6 +4,7 @@
     "description": "这是一个使用 MaaFramework 创建的新项目。",
     "contact": "QQ群: 584275905",
     "license": "LICENSE",
+    "icon": "locales/MDA-Tiny.png",
     "github": "https://github.com/1204244136/MDA",
     "mirrorchyan_rid": "MDA",
     "mirrorchyan_multiplatform": true,
