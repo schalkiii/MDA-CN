@@ -120,7 +120,8 @@
         },
         "post_wait_freezes": 1000,
         "next": [
-            "ArenaFreeBattleFlow"
+            "ArenaFreeBattleFlow",
+            "ArenaFreeBattle"
         ]
     },
     "ArenaFreeBattleVisible": {
