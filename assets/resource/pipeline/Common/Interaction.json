@@ -46,14 +46,10 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": [
-                    785,
-                    31,
-                    42,
-                    311
-                ],
+                "roi": [775,31,52,311],
                 "template": [
-                    "Common/CloseButton.png",
+                    "Common/CloseButton1.png",
+                    
                     "Common/CloseButton2.png",
                     "Common/CloseButton3.png",
                     "Common/CloseButton4.png"
