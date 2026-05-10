@@ -48,7 +48,7 @@ type MemberRecord struct {
 	DiskHash        string `json:"disk_hash"`
 	GUIDHash        string `json:"guid_hash"`
 	Tier            string `json:"tier"`
-	AccountValue    string `json:"account_value"`
+	AccountValue    json.Number `json:"account_value"`
 	RegistrationDate string `json:"registration_date"`
 }
 
@@ -257,9 +257,9 @@ func calculateStatus(record *MemberRecord) *MembershipStatus {
 		return status
 	}
 
-	accountValue, err := strconv.ParseFloat(record.AccountValue, 64)
+	accountValue, err := record.AccountValue.Float64()
 	if err != nil {
-		log.Warn().Str("value", record.AccountValue).Err(err).Msg("Failed to parse account value")
+		log.Warn().Stringer("value", record.AccountValue).Err(err).Msg("Failed to parse account value")
 		return status
 	}
 
