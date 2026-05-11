@@ -95,6 +95,31 @@
             "AdviseQuickAdvise"
         ]
     },
+    "AdviseNormalAdvise": {
+        "desc": "普通咨询",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    697,
+                    573,
+                    52,
+                    24
+                ],
+                "expected": [
+                    "咨询"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]AdviseConfirmAction",
+            "[JumpBack]AdviseStory",
+            "AdviseSettlement"
+        ]
+    },
     "AdviseQuickAdvise": {
         "desc": "快速咨询",
         "recognition": {
@@ -115,8 +140,22 @@
             "type": "Click"
         },
         "next": [
+            "AdviseSettlement"
+        ]
+    },
+    "AdviseSettlement": {
+        "desc": "咨询结算",
+        "post_wait_freezes": {
+            "time": 500,
+            "target": [
+                741,
+                357,
+                88,
+                137
+            ]
+        },
+        "next": [
             "[JumpBack]AdviseRemoveFavorites",
-            "[JumpBack]AdviseConfirmAction",
             "[JumpBack]AdviseConfirmRankIncrease",
             "[JumpBack]AdviseBondIncreasedVisible",
             "[JumpBack]AdviseEpisodeReward",
@@ -224,33 +263,6 @@
         "desc": "未收集完咨询日志",
         "next": [
             "AdviseNormalAdvise"
-        ]
-    },
-    "AdviseNormalAdvise": {
-        "desc": "普通咨询",
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    697,
-                    573,
-                    52,
-                    24
-                ],
-                "expected": [
-                    "咨询"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "[JumpBack]AdviseConfirmAction",
-            "[JumpBack]AdviseStory",
-            "[JumpBack]AdviseConfirmRankIncrease",
-            "[JumpBack]AdviseEpisodeReward",
-            "AdviseNextAdvise"
         ]
     },
     "AdviseFavoriteSelected": {
