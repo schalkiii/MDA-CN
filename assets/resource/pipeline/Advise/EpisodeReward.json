@@ -100,7 +100,8 @@
             }
         },
         "next": [
-            "AdviseClickBadgeStickerReward"
+            "AdviseClickBadgeStickerReward",
+            "AdviseClickAdviceCollection"
         ]
     },
     "AdviseClickBadgeStickerReward": {
