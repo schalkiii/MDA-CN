@@ -21,5 +21,7 @@
     "tasker.membership_warning.requirement": "Required: Gold Doro membership (UserLevel >= 3)",
     "tasker.membership_warning.tier_free": "Free user",
     "tasker.membership_warning.tip": "💡 Sponsor to unlock all member-only tasks",
-    "tasker.membership_warning.non_member_log": "Non-member attempted member-only task, stopped. Sponsor: https://doropay.top"
+    "tasker.membership_check.verified": "🍊 Member task verified (%s, valid until %s)",
+    "tasker.membership_check.sponsor": "🍊 Sponsor: %s",
+    "tasker.membership_check.denied": "🍊 Member task - not a member, task stopped. Sponsor: %s"
 }
