@@ -42,6 +42,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 500,
         "next": [
             "BattleStart",
             "EventChallengeStage"
@@ -68,6 +69,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 500,
         "next": [
             "BattleStart",
             "EventClearStage"
