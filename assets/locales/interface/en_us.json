@@ -94,6 +94,7 @@
     "option.DailyRewardsRankingRewards.label": "Ranking Rewards",
     "option.DailyRewardsMission.label": "Claim Mission Rewards",
     "option.DailyRewardsPassMain.label": "Pass Rewards",
+    "option.DailyRewardsDailyLogin.label": "Daily Login Rewards",
     "option.DailyRewardsFreeRecruit.label": "Anniversary Free Recruitment",
     "task.MapPushing.label": "🍊Auto Map Pushing",
     "task.MapPushing.description": "Must be selected separately. Click to start near monsters on the map; it will automatically click monsters for battle and trigger mechanisms",
