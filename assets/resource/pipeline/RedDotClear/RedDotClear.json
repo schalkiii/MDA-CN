@@ -23,6 +23,7 @@
             }
         },
         "next": [
+            "[JumpBack]CommonClosePage",
             "[JumpBack]RedDotClearCashShop",
             "[JumpBack]RedDotClearNotice",
             "CommonEndTask"
