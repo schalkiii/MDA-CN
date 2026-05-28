@@ -34,7 +34,7 @@ func runRuntimeQuotaCheck(ctx *maa.Context) bool {
 		return true
 	}
 
-	status := RefreshMembershipStatus()
+	status := GetMembershipStatus()
 	snapshot, ok, err := EnsureQuotaAvailable(status)
 	if err != nil {
 		log.Warn().Err(err).Msg("RuntimeQuotaCheck: failed to read local quota state")

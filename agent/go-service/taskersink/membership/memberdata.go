@@ -117,11 +117,6 @@ func GetMembershipStatus() *MembershipStatus {
 	return checkMembership()
 }
 
-// RefreshMembershipStatus returns the current membership status after bypassing cache.
-func RefreshMembershipStatus() *MembershipStatus {
-	return checkMembership()
-}
-
 // checkMembership performs the full membership check flow.
 func checkMembership() *MembershipStatus {
 	if isDebugEnvironment() {
