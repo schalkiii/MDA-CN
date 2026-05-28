@@ -16,11 +16,19 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-var appVersion string
+var (
+	appVersion string
+	clientName string
+)
 
 // SetVersion sets the application version for debug-mode detection.
 func SetVersion(v string) {
 	appVersion = v
+}
+
+// SetClientName sets the PI client name for debug-mode detection.
+func SetClientName(v string) {
+	clientName = v
 }
 
 // isDebugVersion returns true when the version is below 1.0.0 (dev builds, pre-release).
@@ -38,6 +46,10 @@ func isDebugVersion() bool {
 		return true
 	}
 	return major < 1
+}
+
+func isVSCodeClient() bool {
+	return strings.EqualFold(clientName, "VsCode")
 }
 
 type MemberStatusResponse struct {
@@ -122,9 +134,11 @@ func checkMembership() *MembershipStatus {
 		DeviceCode:          deviceCode,
 	}
 
-	// Debug versions (below 1.0.0) bypass membership verification
-	if isDebugVersion() {
-		log.Info().Str("version", appVersion).Msg("Debug version detected, bypassing membership verification")
+	if isDebugVersion() || isVSCodeClient() {
+		log.Info().
+			Str("version", appVersion).
+			Str("client_name", clientName).
+			Msg("Debug environment detected, bypassing membership verification")
 		return &MembershipStatus{
 			Tier:                "Debug",
 			TierCode:            "debug",
