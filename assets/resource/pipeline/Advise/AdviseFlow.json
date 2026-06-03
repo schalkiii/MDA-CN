@@ -146,6 +146,20 @@
     },
     "AdviseSettlementFlow": {
         "desc": "咨询结算",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    15,
+                    70,
+                    25
+                ],
+                "expected": [
+                    "咨询"
+                ]
+            }
+        },
         "post_wait_freezes": {
             "time": 500,
             "target": [
