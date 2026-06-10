@@ -89,6 +89,7 @@
     "option.AccountNurturingCharacterBreakthrough.label": "角色突破",
     "option.AccountNurturingCharacterBreakthrough.description": "启用时应避免装备干扰",
     "option.AccountNurturingSynchroDeviceEnhance.label": "同步器增强",
+    "option.AccountNurturingCubeEnhancement.label": "魔方强化",
     "option.AutoAllocation.label": "自动配置妮姬",
     "option.UseConsumables.label": "使用消耗道具",
     "task.Advise.label": "💬咨询",

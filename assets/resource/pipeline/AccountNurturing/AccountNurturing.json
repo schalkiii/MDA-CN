@@ -25,6 +25,7 @@
         "next": [
             "[JumpBack]AccountNurturingCharacterBreakthrough",
             "[JumpBack]AccountNurturingSynchroDeviceEnhance",
+            "[JumpBack]AccountNurturingCubeEnhancement",
             "CommonEndTask"
         ]
     }

@@ -89,6 +89,7 @@
     "option.AccountNurturingCharacterBreakthrough.label": "Character Breakthrough",
     "option.AccountNurturingCharacterBreakthrough.description": "When enabled, avoid equipment interference",
     "option.AccountNurturingSynchroDeviceEnhance.label": "Synchro Device Enhancement",
+    "option.AccountNurturingCubeEnhancement.label": "Cube Enhancement",
     "option.AutoAllocation.label": "Auto Allocate Nikkes",
     "option.UseConsumables.label": "Use Consumables",
     "task.Advise.label": "💬Advise",
